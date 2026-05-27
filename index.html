@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>???</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: crimson;
+        }
+        .nav a {
+            margin-left: 20px;
+            color: grey;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+        .nav a:hover {
+            color: white;
+        }    
+        h1 {
+            font-size: 40px;
+            color: aqua;
+            text-align: center;
+            padding: 20px;
+            background-color: red;
+        }
+        .hero h1 {
+            color: white;
+            background-color: transparent;
+        }
+        h2 {
+            font-size: 24px;
+            color: blue;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 40px;
+            background-color: #1a1a2e;
+            color: white;
+            animation: fadeIn 1s ease;
+        }
+        .hero h1 {
+            animation: slideup 0.6s ease;
+        }
+        .hero p {
+            animation: slideup 0.6s ease 0.2s both;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.5s;
+            animation: slideup 0.6s ease 0.4s both;
+        }
+        .button:hover {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: crimson;
+            color: white;
+        }
+        p {
+            color: grey;
+        }
+        .description {
+            border: 2px solid;
+        }
+        .content {
+            padding: 40px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            font-family: 'Russo One', sans-serif;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            color: white;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 0px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05) translateY(-4px);
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            0%   { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideup {
+         0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+        @media (max-width: 600px) {
+        .cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            width: 100%;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        }
+        </style>
+  </head>
+  <body>
+    <header class="header">
+        <div class="logo">Иван Петров</div>
+        <nav class="nav">
+            <a href="#">О тренере</a>
+            <a href="#">Пакеты</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Тренируйся умнее!</h1>
+        <p>Профессиональные тренировки с тренером</p>
+        <a href="#" class="button">Записаться</a>
+    </section>
+    <div class="content">
+    <h1>Пакеты услуг</h1>
+    <p class="description">Тренируйся качествене, профессиональнее, прогрессируй в нагрузках качественно и не сломайся</p>
+    <h2>Тренируйся умнее</h2>
+    <p>Я качественный тренер</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Базовый</h3>
+                <p>2 тренировки в неделю</p>
+                <p>5000 ₽/мес</p>
+            </div>
+            <div class="card">
+                <h3>Стандарт</h3>
+                <p>3 тренировки в неделю</p>
+                <p>10000 $/мес</p>
+            </div>
+            <div class="card">
+                <h3>Премиум</h3>
+                <p>4 тренировки в неделю</p>
+                <p>15000 $/мес</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Иван Петров. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
